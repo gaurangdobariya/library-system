@@ -3,7 +3,7 @@ package com.example.library;
 import com.example.library.controller.BookController;
 import com.example.library.model.BookDto;
 import com.example.library.model.BookRequest;
-import com.example.library.service.BookService;
+import com.example.library.service.BookServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -33,7 +33,7 @@ public class BookControllerTest {
 	private MockMvc mockMvc;
 
 	@MockitoBean
-	private BookService bookService;
+	private BookServiceImpl bookService;
 
 	@Autowired
 	private ObjectMapper objectMapper;

@@ -2,7 +2,7 @@ package com.example.library.controller;
 
 import com.example.library.model.BookDto;
 import com.example.library.model.BookRequest;
-import com.example.library.service.BookService;
+import com.example.library.service.BookServiceImpl;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,9 +13,9 @@ import java.util.List;
 @RequestMapping("/books")
 public class BookController {
 
-    private final BookService bookService;
+    private final BookServiceImpl bookService;
 
-    public BookController(BookService bookService) {
+    public BookController(BookServiceImpl bookService) {
         this.bookService = bookService;
     }
 
